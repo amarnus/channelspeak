@@ -1,0 +1,77 @@
+*:focus {
+	outline: none; /* Removes default focus styling unique to a browser */
+}
+
+body, html {
+	font: 14px/1.8em 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	margin: 0;
+	padding: 0;
+	background: #56B3E6;
+	color: #333;
+}
+
+body a {
+	text-decoration: none;
+	color: #3b5998;
+}
+
+div.container {
+	font-size: 28px;
+	margin: 100px auto 20px;
+	width: 55%;
+	color: #444;
+	line-height: 1.2em;
+	font-weight: normal;
+	text-align: center;
+	-moz-border-radius: 24px;
+	-webkit-border-radius: 24px;
+	border-radius: 24px;
+	padding: 40px 40px 20px;
+	background: white;
+}
+
+div.shout {
+	margin-bottom: 20px;
+	letter-spacing: -0.1;
+}
+
+.roomName {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 26px;
+	padding: 10px;
+	background: white;
+	width: 60%;
+	border: solid thin #DDD;
+	color: #999;
+}
+
+.submitButton {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 21px;
+	cursor: pointer;
+	padding: 8px;
+	background-color: #EEE;
+	border: solid thin #DDD;
+}
+
+.submitButton:hover {
+	background-color: #DDD;
+	border: solid thin #EEE;
+}
+
+footer {
+	width: 55%;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 11px;
+	color: #666;
+}
+
+.ruler {
+	opacity: 0.2;
+	border: solid thin #eee;
+}

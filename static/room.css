@@ -1,0 +1,81 @@
+div.container {
+	font: 14px/1.8em 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	line-height: 1.6em;
+	color: #333;
+	text-align: left;
+	width: 70%;
+	padding: 40px 40px 0px;
+	min-height: 500px;
+	margin: 20px auto;
+}
+
+div#main {
+	width: 80%;
+	float: left;
+}
+
+div.description {
+	margin: 5px 0;
+}
+
+aside#sidebar {
+	width: 10%;
+	display: table-cell;
+}
+
+h2.title {
+	font-size: 32px;
+	font-weight: normal;
+	margin: 0 0 20px;
+}
+
+input[type="text"] {
+	font: 14px/1.8em 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	background: white;
+	border: solid thin #AAA;
+	color: #333;
+	width: 96%;
+	padding: 6px;
+}
+
+.chatAreaWrapper {
+	position: relative;
+	height: 350px;
+	border: solid thin #AAA;
+	width: 96%;
+	text-align: left;
+	margin: 0;
+	overflow: auto;
+}
+
+#chatBox {
+	margin: 0;
+	padding: 0;
+}
+
+.chatArea {
+	padding: 10px;
+}
+
+.chatArea strong {
+	font-size: 13px;
+}
+
+div.block {
+	margin-bottom: 20px;
+  text-align: center;
+	border: solid thin #EEE;
+}
+
+div.block .content {
+	padding: 15px;
+}
+
+div.block h3 {
+	font-size: 13px;
+	display: block;
+	font-weight:bold;
+	background-color: #EEE;
+	border-bottom: #DDD;
+  margin: 0;
+}

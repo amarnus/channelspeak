@@ -1,0 +1,5 @@
+indexes:
+- kind: Message
+  properties:
+  - name: roomkey
+  - name: timestamp

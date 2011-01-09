@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>Group Chat - Appengine Demo</title>
+	<meta name="description" content="Channel API Demo - Talk to your friends in private chat rooms."/>
+	<meta name="author" content="Amar Ravikumar">
+	<link href="/static/base.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+  <div class="container">
+	  <div class="main">
+		  <div class="shout">
+			  Create a private chatroom and invite your friends to it!
+			</div>
+			<div style="text-align:center;">
+			  <form action="/createChannel" method="get">
+					<input name="name" type="text" value="" placeholder="Name (eg. weekend plan)" class="roomName"/>
+					<input type="submit" value="Create" class="submitButton"/>
+				</form>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<hr class="ruler">
+		Built by <a href="http://amarnus.me" target="_blank">amarnus</a> using the 
+		<a href="http://code.google.com/appengine/docs/python/channel/overview.html" target="_blank">Google Appengine Channel API</a>, 
+		<a href="http://flesler.blogspot.com/2007/10/jqueryscrollto.html" target="_blank">jQuery scrollTo</a> and the 
+		<a href="http://jquery.malsup.com/form/" target="_blank"> Ajax Form plugins</a>
+	</footer>
+</body>
+</html>

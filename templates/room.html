@@ -1,0 +1,55 @@
+<html>
+  <title>{{name}} / Group Chat on Appengine / Demo</title> 
+  <meta type="description" content="Created by {{owner}}">
+  <link href="/static/base.css" rel="stylesheet" type="text/css"/>
+  <link href="/static/room.css" rel="stylesheet" type="text/css"/>
+</html>
+<body>
+	<div class="container">
+		<div id="main">
+			<h2 class="title">{{name}}</h2>
+			<div class="chat">
+				<div class="chatAreaWrapper">
+					<div class="chatArea">
+						{% for message in messages %}
+						  <div><strong>{{message.author}}</strong>: {{message.text}}</div>
+						{% endfor %}
+					</div>
+				</div>
+				<form action="/chatRelay" method="post" id="chatBox">
+					<input name="message" type="text" class="inputBox" placeholder="Type in your message here" autofocus/>
+				  <input type="hidden" name="room" value="{{roomKey}}"/>
+					<input type="submit" value="Post" class="submitButton" style="display:none;"/>
+				</form>
+				<div class="description">
+					You can invite your friends to this room by sharing the URL of this page <a href="{{logoutUrl}}">Logout</a>
+				</div>
+			</div>
+		</div>
+		<aside id="sidebar">
+			<div class="owner block">
+				<h3>Owner</h3>
+				<div class="content">{{owner}}</div>
+			</div>
+			<div class="members block">
+				<h3>Members</h3>
+				<div class="content">
+						{% for member in members %}
+						  <div>{{member}}</div>
+						{% endfor %}
+				</div>
+			</div>
+	  </aside>
+	  <div class="clear:both;">
+	</div>
+	<footer>
+		<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.4.4.min.js"></script>
+	  <script type="text/javascript" src="https://github.com/malsup/form/raw/master/jquery.form.js?v2.43"></script>
+	  <script type="text/javascript" src="/static/jquery.scrollTo.min.js"></script>
+	  <script type="text/javascript" src="/_ah/channel/jsapi"></script>
+	  <script type="text/javascript">
+	    var token = "{{token}}";
+	  </script>
+	  <script type="text/javascript" src="/static/behaviors.js"></script>
+	</footer>
+</body>
